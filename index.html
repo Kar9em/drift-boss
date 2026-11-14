@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drift Boss 3D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container"></div>
+
+    <div id="hud" class="hidden">
+        <div class="stat-box">النقاط: <span id="score">0</span></div>
+        <div class="stat-box coins">العملات: <span id="coins">0</span> 🪙</div>
+        <div class="stat-box best">الأعلى: <span id="best-score">0</span></div>
+    </div>
+
+    <div id="start-screen" class="overlay">
+        <div class="card">
+            <h1>DRIFT BOSS 3D</h1>
+            <p>اضغط باستمرار للانعطاف يميناً، واترك للانعطاف للأمام</p>
+            <div class="controls-hint">
+                <span>🖱️ كليك يسار</span>
+                <span>⌨️ مسطرة (Space)</span>
+                <span>📱 لمس الشاشة</span>
+            </div>
+            <button id="start-btn">ابدأ السباق</button>
+        </div>
+    </div>
+
+    <div id="gameover-screen" class="overlay hidden">
+        <div class="card">
+            <h2>سقطت السيارة!</h2>
+            <p>نقاطك في هذه الجولة: <strong id="final-score">0</strong></p>
+            <p>أعلى نتيجة: <strong id="final-best">0</strong></p>
+            <button id="restart-btn">العب مرة أخرى</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
